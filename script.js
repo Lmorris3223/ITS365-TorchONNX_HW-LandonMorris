@@ -5,7 +5,7 @@ let session = null;
 
 async function loadModel() {
     try {
-        session = await ort.InferenceSession.create("fruit_model.onnx");
+        session = await ort.InferenceSession.create("fruit_model(3).onnx");
         console.log("Model loaded");
         console.log("Inputs:", session.inputNames);
         console.log("Outputs:", session.outputNames);
